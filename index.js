@@ -12,7 +12,7 @@ const app = express();
 const server = http.createServer(app);
 const wss = new WebSocket.Server({ server });
 
-// ✅ Solana Setup
+
 const connection = new solanaWeb3.Connection("https://solana-devnet.g.alchemy.com/v2/goCbNdCBRn-4sL01TfnJ_Yz7GB_5XmLl","confirmed");
 
 let escrowKeypair;
